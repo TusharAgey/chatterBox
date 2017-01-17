@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="ChatterBot.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChatterBot"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Pivot Title="Talk To Me! P:" Margin="0,0,-512,0">
+            <Pivot.Background>
+                <ImageBrush ImageSource="Assets/tushar22.jpg"/>
+            </Pivot.Background>
+            <PivotItem Header="ChatterBox">
+                <Grid>
+                    <TextBox x:Name="infoTextBox" HorizontalAlignment="Left" Margin="90,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="213" Width="335"/>
+                    <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Source="Assets/ListeningEarcon.wav" AutoPlay="False"/>
+                </Grid>
+            </PivotItem>
+
+        </Pivot>
+
+    </Grid>
+</Page>
